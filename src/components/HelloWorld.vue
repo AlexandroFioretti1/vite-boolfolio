@@ -1,13 +1,9 @@
 <script>
 export default {
-    name: "HelloWorld",
-}
+  name: "HelloWorld",
+};
 </script>
 
-<template>
-   
-</template>
+<template></template>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

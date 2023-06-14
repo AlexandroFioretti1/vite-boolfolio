@@ -9,7 +9,7 @@ export default {
   <div class="container">
     <div class="row">
       <AppHeader></AppHeader>
-      <router-view></router-view>
+      <router-view ></router-view>
     </div>
   </div>
 </template>

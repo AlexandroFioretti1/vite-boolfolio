@@ -1,9 +1,10 @@
 <script>
-export default {};
+
+export default {
+  name: "ProjectShow",
+};
 </script>
 
-<template>
-  <div>ciao</div>
-</template>
+<template></template>
 
 <style lang="scss" scoped></style>
