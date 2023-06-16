@@ -31,17 +31,21 @@ export default {
       :to="{ name: 'project', params: { id: project.id } }"
     >
       <div class="card h-100">
-        <h3 class="">Name Repository: {{ project.name }}</h3>
+        <h3 class="">Project Name: {{ project.name }}</h3>
         <img :src="host + 'storage/' + project.screenshot" alt="" />
-        <p>Start Date: {{ project.start_date }}</p>
-        <p v-if="project.type">type: {{ project.type.name }}</p>
-        <template v-if="project.technologies">
-          <p>technologies:</p>
-          <p v-for="technology in project.technologies">
-            {{ technology.name }}
-          </p>
-          <p>Made by: Alexandro Fioretti</p>
-        </template>
+        <span class="mb-3"
+          ><strong> Start Date:</strong> {{ project.start_date }}</span
+        >
+        <p v-if="project.type">
+          <strong> Type: </strong> {{ project.type.name }}.
+        </p>
+        <div v-if="project.technologies">
+          <strong> Technologies: </strong>
+          <span v-for="technology in project.technologies">
+            {{ technology.name }}.
+          </span>
+          <h6 class="mt-4">Made by: Alexandro Fioretti</h6>
+        </div>
       </div>
     </router-link>
   </div>
