@@ -1,22 +1,20 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
 import AppFooter from "./components/AppFooter.vue";
-import AppMain from "./components/AppMain.vue";
+import BtnHome from "./components/BtnHome.vue";
 export default {
-  components: { AppHeader, AppFooter, AppMain },
+  components: { AppHeader, AppFooter, BtnHome },
 };
 </script>
 
 <template>
   <AppHeader></AppHeader>
-  <div class="//sfondo">
-    <div class="container red">
-      <div class="row">
-        <AppMain></AppMain>
-        <!--<router-view></router-view>  -->
-      </div>
+  <div class="container red">
+    <div class="row">
+      <router-view></router-view>
     </div>
   </div>
+  <BtnHome></BtnHome>
   <AppFooter></AppFooter>
 </template>
 

@@ -4,9 +4,57 @@ main {
   margin: 0 auto;
 }
 .hero {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+}
+
+.hero-text {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.name {
+  font-family: "Cormorant Garamond", sans-serif;
+  font-size: 3.75rem;
+}
+
+.brands {
+  font-size: 1.875rem;
+  display: flex;
+  gap: 15px;
+}
+
+.brands > a {
+  text-decoration: none;
+  color: #2d2e32;
+}
+
+.brands > a:hover {
+  color: rgb(37 99 235);
+  transition-duration: 500ms;
+}
+
+.skills > div > ul > li > svg {
+  width: 40px;
+  height: 40px;
+}
+
+.skills > div > ul {
+  gap: 3rem;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+.skills > div > ul > li {
+  border-radius: 50%;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  background-color: rgb(249 250 251);
+  padding: 1rem;
 }

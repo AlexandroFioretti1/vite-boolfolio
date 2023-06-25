@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory } from "vue-router";
 import AppHome from "./views/AppHome.vue";
 import ProjectShow from "./views/ProjectShow.vue";
-import errorpage from "./views/errorpage.vue";
+import ErrorPage from "./views/ErrorPage.vue";
+import ProjectsView from "./views/ProjectsView.vue";
+import ContactsView from "./views/ContactsView.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -19,9 +21,18 @@ const router = createRouter({
     {
       path: "/pagenotfound",
       name: "pagenotfound",
-      component: errorpage,
+      component: ErrorPage,
     },
-
+    {
+      path: "/projects",
+      name: "projects",
+      component: ProjectsView,
+    },
+    {
+      path: "/contacts",
+      name: "contacts",
+      component: ContactsView,
+    },
   ],
 });
 
