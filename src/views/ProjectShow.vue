@@ -30,7 +30,7 @@ export default {
 </script>
 
 <template>
-  <div v-if="project" class="col">
+  <div v-if="project" class="col pb-5">
     <div class="card">
       <h3 class="">Name Repository: {{ project.name }}</h3>
       <img :src="host + 'storage/' + project.screenshot" alt="" />

@@ -1,2 +1,8 @@
 // Import all of Bootstrap's CSS
 @import "/node_modules/bootstrap/scss/bootstrap";
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Poppins:wght@500;600;700;800&display=swap%27");
+
+body {
+  font-family: "Poppins", sans-serif;
+}

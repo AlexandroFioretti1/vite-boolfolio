@@ -21,6 +21,7 @@ const router = createRouter({
       name: "pagenotfound",
       component: errorpage,
     },
+
   ],
 });
 
